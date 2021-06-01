@@ -23,10 +23,13 @@ The following input is required:
 
 `livec_path`: path to the LIVE Challenge dataset, including metadata files _allmos_release.mat_ and 
 _allstddev_release.mat_. For example: _'c:\\livechallenge'_.
+
 `koniq_path`: path to the KoNIQ-10k dataset, including metadata file 
 _koniq10k_scores_and_distributions.csv_. For example: _'c:\\koniq10k'_.
+
 `spaq_path`: path to the SPAQ dataset, including metadata _file mos_spaq.xlsx_. For example: 
 _'c:\\spaq'_.
+
 `cpugpu`: whether to use CPU or GPU for training and testing the models, either _'cpu'_ or _'gpu'_.
 
 The script implements the following functionality:
