@@ -10,7 +10,7 @@ KoNIQ-10k image quality database from: http://database.mmsp-kn.de/koniq-10k-data
 
 SPAQ image quality database from: https://github.com/h4nwei/SPAQ
 
-For using the implementation, extract all the Matlab scripts (*.m) in the same folder.
+For using the implementation, download all the Matlab scripts in the same folder.
 
 For training and testing the model from scratch, you can use `masterScript.m`. It can be run from 
 Matlab command line as:
