@@ -10,10 +10,12 @@ SPAQ image quality database from: https://github.com/h4nwei/SPAQ
 
 For using the implementation, extract all the Matlab scripts (*.m) in the same folder.
 
-For training and testing the model from scratch, you can use masterScript.m. It can be run from 
+For training and testing the model from scratch, you can use 'masterScript.m'. It can be run from 
 Matlab command line as:
 
+```
 >> masterScript(livec_path, koniq_path, spaq_path, cpugpu);
+```
 
 The following input is required:
 
