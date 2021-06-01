@@ -5,12 +5,14 @@ We propose an image quality model attempting to mimic the attention mechanism of
 As a prerequisite, the following third-party image quality databases need to be installed:
 
 LIVE Challenge image quality database from: http://live.ece.utexas.edu/research/ChallengeDB/
+
 KoNIQ-10k image quality database from: http://database.mmsp-kn.de/koniq-10k-database.html
+
 SPAQ image quality database from: https://github.com/h4nwei/SPAQ
 
 For using the implementation, extract all the Matlab scripts (*.m) in the same folder.
 
-For training and testing the model from scratch, you can use 'masterScript.m'. It can be run from 
+For training and testing the model from scratch, you can use `masterScript.m`. It can be run from 
 Matlab command line as:
 
 ```
@@ -19,13 +21,13 @@ Matlab command line as:
 
 The following input is required:
 
-livec_path: path to the LIVE Challenge dataset, including metadata files allmos_release.mat and 
-allstddev_release.mat. For example: 'c:\\livechallenge'.
-koniq_path: path to the KoNIQ-10k dataset, including metadata file 
-koniq10k_scores_and_distributions.csv. For example: 'c:\\koniq10k'.
-spaq_path: path to the SPAQ dataset, including metadata file mos_spaq.xlsx. For example: 
-'c:\\spaq'.
-cpugpu: whether to use CPU or GPU for training and testing the models, either 'cpu' or 'gpu'.
+`livec_path`: path to the LIVE Challenge dataset, including metadata files `allmos_release.mat` and 
+`allstddev_release.mat`. For example: `c:\\livechallenge`.
+`koniq_path`: path to the KoNIQ-10k dataset, including metadata file 
+_koniq10k_scores_and_distributions.csv_. For example: `'c:\\koniq10k'`.
+`spaq_path`: path to the SPAQ dataset, including metadata _file mos_spaq.xlsx_. For example: 
+`c:\\spaq`.
+`cpugpu`: whether to use CPU or GPU for training and testing the models, either 'cpu' or 'gpu'.
 
 The script implements the following functionality:
 
