@@ -21,22 +21,23 @@ Matlab command line as:
 
 The following input is required:
 
-`livec_path`: path to the LIVE Challenge dataset, including metadata files `allmos_release.mat` and 
-`allstddev_release.mat`. For example: `c:\\livechallenge`.
+`livec_path`: path to the LIVE Challenge dataset, including metadata files _allmos_release.mat_ and 
+_allstddev_release.mat_. For example: _'c:\\livechallenge'_.
+
 `koniq_path`: path to the KoNIQ-10k dataset, including metadata file 
-_koniq10k_scores_and_distributions.csv_. For example: `'c:\\koniq10k'`.
+_koniq10k_scores_and_distributions.csv_. For example: _'c:\\koniq10k'_.
 `spaq_path`: path to the SPAQ dataset, including metadata _file mos_spaq.xlsx_. For example: 
-`c:\\spaq`.
-`cpugpu`: whether to use CPU or GPU for training and testing the models, either 'cpu' or 'gpu'.
+_'c:\\spaq'_.
+`cpugpu`: whether to use CPU or GPU for training and testing the models, either _'cpu'_ or _'gpu'_.
 
 The script implements the following functionality:
 
 1) Makes patches out of LIVE Challenge dataset and makes probabilistic quality scores (file 
-LiveC_prob.mat), using processLiveChallenge.m script.
-2) Makes downscaled version of the SPAQ dataset (SPAQ-768), using resizeImages.m script.
-3) Trains CNN feature extractor, using trainCNNmodel.m script.
+_LiveC_prob.mat_), `using processLiveChallenge.m` script.
+2) Makes downscaled version of the SPAQ dataset (SPAQ-768), using `resizeImages.m` script.
+3) Trains CNN feature extractor, using `trainCNNmodel.m` script.
 4) Extracts feature vector sequences from KoNIQ-10k and SPAQ images, using the trained
-feature extractor and computeCNNfeatures.m script.
+feature extractor and `computeCNNfeatures.m` script.
 5) Trains and tests RNN model by using KoNIQ-10k features for training and SPAQ for testing,
-and then vice versa. Uses trainAndTestRNNmodel.m script for this purpose. Displays the results
+and then vice versa. Uses `trainAndTestRNNmodel.m` script for this purpose. Displays the results
 for SCC, PCC, and RMSE.
